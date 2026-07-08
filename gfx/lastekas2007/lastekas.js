@@ -176,7 +176,8 @@ function openFlash(url, imageWidth, imageHeight, teema, nimi) {
 	if (url == 'GKM_070314_pank2.swf') {
 		newWindow.document.writeln('<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct="UA-117729-19";urchinTracker();</script>');
 	}
-	newWindow.document.writeln('</head>');
+	newWindow.document.writeln('<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWindow.document.writeln('<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">');
 	newWindow.document.writeln('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="'+imageWidth+'" height="'+imageHeight+'">');
 	newWindow.document.writeln('<param name="allowScriptAccess" value="sameDomain" />');
@@ -202,7 +203,8 @@ function openPicture(url, imageWidth, imageHeight, teema, nimi) {
 	newWindow = window.open("","newWindow","scrollbars=0,resizable=0,width="+(imageWidth+100)+",height="+(imageHeight+120)+",left=80,top=50");
 	newWindow.document.open();
 	newWindow.document.writeln('<html><head><title>Lasteveeb</title>');
-	newWindow.document.writeln('</head>');
+	newWindow.document.writeln('<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWindow.document.writeln('<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">');
   newWindow.document.writeln('<br><div align=center><a href="javascript:self.close()"><img border=0 src="file-upload/'+url+'" hspace=0 vspace=0 border=0 width="'+imageWidth+'" height="'+imageHeight+'"></a></div><br>');
 	newWindow.document.writeln('<div style="text-align: center; width: '+(imageWidth+100)+'; margin: 2px 0px 10px;"><div style="width: 468px; margin: 4px auto;"><iframe src="http://www.lastekas.ee/banners/banner.php?loc=11" width="468" height="60" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0" align="middle" scrolling="no" style="float:left;"></iframe></div><div class="clear"></div></div>');
@@ -222,7 +224,8 @@ else
 }
 	newWindow.document.open();
 	newWindow.document.writeln('<html><title>Lasteveeb</title>');
-	newWindow.document.writeln('</head>');
+	newWindow.document.writeln('<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWindow.document.writeln('<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">');
 
 if ((url == 'hansa/massin/massin.html') || (url == 'hansa/klotris/loader.html') || (url == 'hansa/pussle/pussle.html'))
@@ -266,7 +269,8 @@ function openRist(url, imageWidth, imageHeight) {
 	newWindow = window.open("","newWindow","scrollbars=0,resizable=0,width="+imageWidth+",height="+(imageHeight+70)+",left=80,top=50");
 	newWindow.document.open();
 	newWindow.document.writeln('<html><head><title>Lasteveebi ristsõna</title>');
-	newWindow.document.writeln('</head>');
+	newWindow.document.writeln('<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWindow.document.writeln('<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">');
 	newWindow.document.writeln('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="'+imageWidth+'" height="'+imageHeight+'" align="middle">');
         newWindow.document.writeln('<param name="allowScriptAccess" value="sameDomain" />');
@@ -285,7 +289,8 @@ function openKaraoke(url, imageWidth, imageHeight, teema, nimi) {
 	newWindow = window.open("","newWindow","scrollbars=0,resizable=0,width="+imageWidth+",height="+(imageHeight+70)+",left=80,top=50");
 	newWindow.document.open();
 	newWindow.document.writeln('<html><head><title>Lasteveeb</title>');
-	newWindow.document.writeln('</head>');
+	newWindow.document.writeln('<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWindow.document.writeln('<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">');
 	newWindow.document.writeln('<table border="0" cellpadding="0" style="border-collapse: collapse" width="700" id="table1" height="525"><tr><td align="center">');
 	newWindow.document.writeln('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="'+imageWidth+'" height="'+imageHeight+'" id="player" align="middle">');
@@ -318,7 +323,8 @@ function openStreem(url, imageWidth, imageHeight, teema) {
 	newWindow = window.open("","newWindow","scrollbars=0,resizable=0,width="+imageWidth+",height="+(imageHeight+70)+",left=80,top=50");
 	newWindow.document.open();
 	newWindow.document.writeln('<html><title>Jänku-Jussi kodu!</title>');
-	newWindow.document.writeln('</head>');
+	newWindow.document.writeln('<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWindow.document.writeln('<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">');
 	newWindow.document.writeln('<table border="0" cellpadding="0" cellspacing="0" width="100%" height="380"><tr><td width="146" align="center">');
 	newWindow.document.writeln('<!-- ilma algus --><IFRAME src="http://www.ilm.ee/~data/include/ilm.php3" width="142" height="360" scrolling="no" frameborder="0"></IFRAME><!-- ilma lõpp -->');
@@ -336,7 +342,8 @@ function openMuster(url, imageWidth, imageHeight, teema, nimi) {
 	newWindow = window.open("","newWindow","scrollbars=0,resizable=0,width="+imageWidth+",height="+(imageHeight+70)+",left=80,top=50");
 	newWindow.document.open();
 	newWindow.document.writeln('<html><title>Lasteveeb</title>');
-	newWindow.document.writeln('</head>');
+	newWindow.document.writeln('<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWindow.document.writeln('<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">');
 	newWindow.document.writeln('<table border="0" cellpadding="0" style="border-collapse: collapse" width="700" id="table1" height="525"><tr><td align="center">');
 	newWindow.document.writeln('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="'+imageWidth+'" height="'+imageHeight+'" id="player" align="middle">');

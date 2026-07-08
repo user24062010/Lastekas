@@ -3,7 +3,8 @@ function open_pic(pic_location, page_title, pic_width, pic_height) {
 	imgVar.src = pic_location;
 	newWin = window.open ('', 'pic_window', 'height=' + pic_height + ',width=' + pic_width + 
 		',top=20,left=20,resizable=no');
-	newWin.document.write ('<html><head><title>' + page_title + '</title></head>');
+	newWin.document.write ('<html><head><title>' + page_title + '</title><script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWin.document.write ('<body style="margin: 0px; text-align: center; vertical-align: middle">');
 	newWin.document.write ('<a href="javascript:window.close()"><img src="' + pic_location + '" height="' + 
 		pic_height + '" width="' + pic_width + '" name="im"></a></body></html>');
@@ -27,7 +28,8 @@ function open_popup(pic_location, page_title, new_link, pic_width, pic_height) {
   }
 	newWin = window.open ('', 'pic_window', 'height=' + pic_height + ',width=' + pic_width + 
 		',top=' + wtop + ',left=' + wleft + ',resizable=no');
-	newWin.document.write ('<html><head><title>' + page_title + '</title></head>');
+	newWin.document.write ('<html><head><title>' + page_title + '</title><script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>');
 	newWin.document.write ('<body style="margin: 0px; text-align: center; vertical-align: middle">');
 	newWin.document.write ('<a href="javascript:window.opener.location.href=\'' + new_link + '\'; window.close();"><img src="' + pic_location + '" height="' + 
 		pic_height + '" width="' + pic_width + '" name="im" style="border: 0;"></a></body></html>');
